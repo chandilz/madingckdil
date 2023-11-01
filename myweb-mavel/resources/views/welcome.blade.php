@@ -31,7 +31,7 @@
             background-color: skyblue;
             border-radius: 7px;
             margin-right: 15px;
-            display: inline;
+            display: inline-block;
         }
 
         #login a {
@@ -40,35 +40,116 @@
 
         #login:hover {
             background-color: blue;
-            transition: 1s;
+            transition: 0.4s;
         }
 
         #login a:hover {
             color: aqua;
+            transition: 0.4s;
         }
 
         .container {
-            margin-top: 40px;
+            margin-top: 15px;
+            flex-wrap: wrap;
         }
 
 
         .vid {
-            width: 40%;
-            height: 200px;
-            padding: 150px 150px;
+            width: 65%;
+            height: 300px;
             background-color: skyblue;
+            position: absolute;
+            left: 0;
+            margin-left: 20px;
+            border-radius: 10px;
 
 
         }
 
         .md {
-            width: 40%;
-            height: 200px;
-            padding: 150px 150px;
+            width: 30%;
+            height: 300px;
             background-color: blue;
+            position: absolute;
+            right: 0;
+            margin-right: 20px;
+            border-radius: 10px;
+
+        }
+
+        .judul {
+            position: relative;
+            top: 303px;
+            width: 340px;
+            margin: start;
+            font-size: 20px;
+
+        }
+
+        .judul p {
+            text-align: center;
+            border: 2px solid blueviolet;
+        }
+
+        .judul2 {
+            position: absolute;
+            top: 375px;
+            width: 340px;
+            right: 0;
+            margin-right: 45px;
+            font-size: 20px;
+
+        }
+
+        .judul2 p {
+            text-align: center;
+            border: 2px solid blueviolet;
+        }
 
 
 
+        .jadwak {
+            position: relative;
+            top: 310px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .jadwak ul{
+            list-style: none;
+
+        }
+
+        .jadwak ul li {
+            margin: 1px 29px;
+            float: left;
+            padding: 5px 15px;
+            border-radius: 6px;
+
+        }
+
+        .jadlist {
+            position: relative;
+            top: 280px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .jadlist ul{
+            list-style: none;
+
+        }
+
+        .jadlist ul li {
+            margin: 5px 32px;
+            float: left;
+            padding: 5px 15px;
+            background-color: skyblue;
+            border-radius: 6px;
         }
 
 
@@ -82,8 +163,13 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
+<<<<<<< HEAD
                     <img src="https://imgs.search.brave.com/5vDY-nqURtYeVo9-NbhGILkB9Y4c6cBLuVGpxEy4_5s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/NDU2OTAzMC92ZWN0/b3IvbS1sZXR0ZXIt/bGluZXItbG9nby1k/ZXNpZ24uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPXJ1ejhi/ZHVvTmpSc3RDMG82/VWdsZXMzTWRuckxW/ZGVDNmtMbUg2U3dY/Z3c9" width="30" height="24" class="d-inline-block align-text-top">
                     MadingKU
+=======
+                    <img src="https://imgs.search.brave.com/Xy8O-arel0A2vGqhyZa9fawT8E-GGh5xDwQ-MtsG8fU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbS1sb2dvLWRl/c2lnbl83NjMzMTgt/MzEuanBnP3NpemU9/NjI2JmV4dD1qcGc" width="30" height="30" class="d-inline-block align-text-top">
+                    Madingku
+>>>>>>> 6de2253 (tinggal perbaiki dikit)
                   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -122,18 +208,58 @@
 
 
         <div class="container">
-            
+
             {{-- Video --}}
                 <div class="vid">
 
                 </div>
             {{-- Video --}}
 
+
             {{-- Mading --}}
             <div class="md">
 
             </div>
             {{-- Mading --}}
+
+
+
+            {{-- Judul 1 --}}
+            <div class="judul">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates delectus animi aperiam, et praesentium, culpa ducimus dignissimos magni!</p>
+            </div>
+            {{-- Judul 1--}}
+
+            {{-- Judul 2--}}
+            <div class="judul2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates delectus animi aperiam, et praesentium, culpa ducimus dignissimos magni!</p>
+                </div>
+                {{-- Judul 2--}}
+
+
+            {{-- Jadwal Sholat --}}
+
+            <div class="jadwak">
+                <ul>
+                    <li>Subuh</li>
+                    <li>Dzuhur</li>
+                    <li>Ashar</li>
+                    <li>Magrib</li>
+                    <li>isya</li>
+                </ul>
+            </div>
+
+            <div class="jadlist">
+                <ul>
+                    <li>04.03</li>
+                    <li>11.33</li>
+                    <li>14.50</li>
+                    <li>17.43</li>
+                    <li>18.55</li>
+                </ul>
+            </div>
+            {{-- Jadwal Sholat --}}
+
         </div>
 
 
