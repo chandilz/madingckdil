@@ -56,7 +56,7 @@
 
         .vid {
             width: 65%;
-            height: 300px;
+            height: 400px;
             background-color: skyblue;
             position: absolute;
             left: 0;
@@ -66,9 +66,13 @@
 
         }
 
+        .vid video {
+            border-radius: 15px;
+        }
+
         .md {
             width: 30%;
-            height: 300px;
+            height: 400px;
             background-color: blue;
             position: absolute;
             right: 0;
@@ -79,7 +83,7 @@
 
         .judul {
             position: relative;
-            top: 315px;
+            top: 420px;
             width: 45%;
             margin: start;
             font-size: 20px;
@@ -94,7 +98,7 @@
 
         .judul2 {
             position: relative;
-            top: 315px;
+            top: 420px;
             width: 45%;
             margin: end;
             font-size: 20px;
@@ -110,7 +114,7 @@
 
         .jadwak {
             position: relative;
-            top: 310px;
+            top: 485px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -132,7 +136,7 @@
 
         .jadlist {
             position: relative;
-            top: 280px;
+            top: 460px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -150,6 +154,15 @@
             padding: 5px 15px;
             background-color: skyblue;
             border-radius: 6px;
+        }
+
+        .judso {
+            position: relative;
+            top: 470px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
         }
 
 
@@ -206,7 +219,7 @@
 
             {{-- Video --}}
                 <div class="vid">
-
+                    <video src="https://www.youtube.com/watch?v=-TtR7aW3AyY" width="100%" height="100%" autoplay loop controls></video>
                 </div>
             {{-- Video --}}
 
@@ -223,6 +236,8 @@
             <div class="judul">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates delectus animi aperiam, et praesentium, culpa ducimus dignissimos magni!</p>
             </div>
+
+
             {{-- Judul 1--}}
 
             {{-- Judul 2--}}
@@ -233,6 +248,10 @@
 
 
             {{-- Jadwal Sholat --}}
+
+            <div class="judso">
+                <h3>Jadwal Sholat</h3>
+            </div>
 
             <div class="jadwak">
                 <ul>
