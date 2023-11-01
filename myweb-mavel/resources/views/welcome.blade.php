@@ -79,35 +79,31 @@
 
         .judul {
             position: relative;
-            top: 303px;
-            width: 340px;
+            top: 315px;
+            width: 45%;
             margin: start;
             font-size: 20px;
-            border: 2px solid blueviolet;
-            border-radius: 10px;
+            float: right;
 
         }
 
         .judul p {
             text-align: center;
-
+            border: 2px solid blueviolet;
         }
 
         .judul2 {
-            position: absolute;
-            top: 374px;
-            width: 340px;
-            right: 0;
-            margin-right: 45px;
+            position: relative;
+            top: 315px;
+            width: 45%;
+            margin: end;
             font-size: 20px;
-            border: 2px solid blueviolet;
-            border-radius: 10px;
 
         }
 
         .judul2 p {
             text-align: center;
-
+            border: 2px solid blueviolet;
         }
 
 
@@ -167,9 +163,8 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="https://imgs.search.brave.com/5vDY-nqURtYeVo9-NbhGILkB9Y4c6cBLuVGpxEy4_5s/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTMy/NDU2OTAzMC92ZWN0/b3IvbS1sZXR0ZXIt/bGluZXItbG9nby1k/ZXNpZ24uanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPXJ1ejhi/ZHVvTmpSc3RDMG82/VWdsZXMzTWRuckxW/ZGVDNmtMbUg2U3dY/Z3c9" width="30" height="24" class="d-inline-block align-text-top">
-
-                    MadingKU
+                    <img src="https://imgs.search.brave.com/Xy8O-arel0A2vGqhyZa9fawT8E-GGh5xDwQ-MtsG8fU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbS1sb2dvLWRl/c2lnbl83NjMzMTgt/MzEuanBnP3NpemU9/NjI2JmV4dD1qcGc" width="30" height="30" class="d-inline-block align-text-top">
+                    Madingku
                   </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
