@@ -1,285 +1,115 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Mading KU</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-
-    {{-- Bootstrap --}}
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-
-    <!-- Styles -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
     <style>
-        body {
-            font-family: 'Poppins';
-            font-weight: 600;
-            box-sizing: border-box;
-        }
+        .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
-        #login {
-            padding: 7px 14px;
-            background-color: skyblue;
-            border-radius: 7px;
-            margin-right: 15px;
-            display: inline-block;
-        }
+    .running-text {
+        overflow: hidden;
+        white-space: nowrap;
+        animation: marquee 20s linear infinite;
+    }
 
-        #login a {
-            text-decoration: none;
-        }
+    @keyframes marquee {
+        0%   { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+        </style>
 
-        #login:hover {
-            background-color: blue;
-            transition: 0.4s;
-        }
+    <title>Mading</title>
 
-        #login a:hover {
-            color: aqua;
-            transition: 0.4s;
-        }
-
-        .container {
-            margin-top: 15px;
-            flex-wrap: wrap;
-        }
-
-
-        .vid {
-            width: 65%;
-            height: 400px;
-            background-color: skyblue;
-            position: absolute;
-            left: 0;
-            margin-left: 20px;
-            border-radius: 10px;
-
-
-        }
-
-        .vid video {
-            border-radius: 15px;
-        }
-
-        .md {
-            width: 30%;
-            height: 400px;
-            background-color: blue;
-            position: absolute;
-            right: 0;
-            margin-right: 20px;
-            border-radius: 10px;
-
-        }
-
-        .judul {
-            position: relative;
-            top: 420px;
-            width: 45%;
-            margin: start;
-            font-size: 20px;
-            float: right;
-
-        }
-
-        .judul p {
-            text-align: center;
-            border: 2px solid blueviolet;
-        }
-
-        .judul2 {
-            position: relative;
-            top: 420px;
-            width: 45%;
-            margin: end;
-            font-size: 20px;
-
-        }
-
-        .judul2 p {
-            text-align: center;
-            border: 2px solid blueviolet;
-        }
-
-
-
-        .jadwak {
-            position: relative;
-            top: 485px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .jadwak ul{
-            list-style: none;
-
-        }
-
-        .jadwak ul li {
-            margin: 1px 29px;
-            float: left;
-            padding: 5px 15px;
-            border-radius: 6px;
-
-        }
-
-        .jadlist {
-            position: relative;
-            top: 460px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-        .jadlist ul{
-            list-style: none;
-
-        }
-
-        .jadlist ul li {
-            margin: 5px 32px;
-            float: left;
-            padding: 5px 15px;
-            background-color: skyblue;
-            border-radius: 6px;
-        }
-
-        .judso {
-            position: relative;
-            top: 470px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-
-
-
-    </style>
-
+    
 </head>
-
-    <body>
-        {{-- Navbar --}}
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="https://imgs.search.brave.com/Xy8O-arel0A2vGqhyZa9fawT8E-GGh5xDwQ-MtsG8fU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IvbS1sb2dvLWRl/c2lnbl83NjMzMTgt/MzEuanBnP3NpemU9/NjI2JmV4dD1qcGc" width="30" height="30" class="d-inline-block align-text-top">
-                    Madingku
-                  </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-                <div id="login">
-                    <a href="/login" >Login</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        {{-- Navbar --}}
-
-
-
-        <div class="container">
-
-            {{-- Video --}}
-                <div class="vid">
-                    <video src="https://www.youtube.com/watch?v=-TtR7aW3AyY" width="100%" height="100%" autoplay loop controls></video>
-                </div>
-            {{-- Video --}}
-
-
-            {{-- Mading --}}
-            <div class="md">
-
-            </div>
-            {{-- Mading --}}
-
-
-
-            {{-- Judul 1 --}}
-            <div class="judul">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates delectus animi aperiam, et praesentium, culpa ducimus dignissimos magni!</p>
-            </div>
-
-
-            {{-- Judul 1--}}
-
-            {{-- Judul 2--}}
-            <div class="judul2">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit voluptates delectus animi aperiam, et praesentium, culpa ducimus dignissimos magni!</p>
-                </div>
-                {{-- Judul 2--}}
-
-
-            {{-- Jadwal Sholat --}}
-
-            <div class="judso">
-                <h3>Jadwal Sholat</h3>
-            </div>
-
-            <div class="jadwak">
-                <ul>
-                    <li>Subuh</li>
-                    <li>Dzuhur</li>
-                    <li>Ashar</li>
-                    <li>Magrib</li>
-                    <li>isya</li>
-                </ul>
-            </div>
-
-            <div class="jadlist">
-                <ul>
-                    <li>04.03</li>
-                    <li>11.33</li>
-                    <li>14.50</li>
-                    <li>17.43</li>
-                    <li>18.55</li>
-                </ul>
-            </div>
-            {{-- Jadwal Sholat --}}
-
+<body>
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Mading 0.1a</a>
+          <a class="btn btn-primary" href="#" role="button">LOGIN</a>
+          </div>
         </div>
+      </nav>
 
+      <!-- main section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Video Section -->
+                <div class="mb-4">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- List Agenda Section -->
+                <div class="mb-4">
+                    <h2>Agenda</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item text-center">Agenda 1</li>
+                        <li class="list-group-item text-center">Agenda 2</li>
+                        <li class="list-group-item text-center">Agenda 3</li>
+                        <li class="list-group-item text-center">Agenda 4</li>
+                        <h4> NOTE! BUAT AGENDA dan VIDE SPACE BETWEEN KANAN DAN KIRI</h4>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- container section -->
+    <div class="container">
+        <h1>ISI DARI CONTENT BLANK! buat footer stay di bawah</h1>
+    </div>
 
-        {{-- Script --}}
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    </body>
+    <!-- footer section -->
+    <div class="footer">
+        <div class="container">
+            <div class="running-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ea voluptas animi ratione ipsa quos explicabo nam nemo unde sit quidem ducimus iusto consectetur, est, molestiae eum eius aliquid!
+            </div>
+        </div>
+    </div>
 
+    <!-- Sholat section -->
+    <div class="row text-center justify-content-between">
+        <div class="col bg-primary">
+            <div class="waktu-sholat">
+                <h3>Fajr</h3>
+                <p>04:30 AM</p>
+            </div>
+        </div>
+        <div class="col bg-danger">
+            <div class="waktu-sholat">
+                <h3>Dhuhr</h3>
+                <p>12:15 PM</p>
+            </div>
+        </div>
+        <div class="col bg-primary">
+            <div class="waktu-sholat">
+                <h3>Asr</h3>
+                <p>03:45 PM</p>
+            </div>
+        </div>
+        <div class="col bg-danger">
+            <div class="waktu-sholat">
+                <h3>Maghrib</h3>
+                <p>06:30 PM</p>
+            </div>
+        </div>
+        <div class="col bg-primary">
+            <div class="waktu-sholat">
+                <h3>Isha</h3>
+                <p>08:15 PM</p>
+            </div>
+        </div>
+    </div>
+
+</body>
 </html>
-
