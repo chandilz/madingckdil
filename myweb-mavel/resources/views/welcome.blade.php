@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <title>Madingku</title>
 </head>
@@ -26,17 +26,37 @@
     <div class="container-fluid p-md-3">
         <div class="row justify-content-between">
             <div class="col-md-6">
-                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-md-5 text-center" >
-                <h2>AGENDA</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">Agenda 1</li>
-                    <li class="list-group-item">Agenda 2</li>
-                    <li class="list-group-item">Agenda 3</li>
-                    <li class="list-group-item">Agenda 4</li>
-                    <li class="list-group-item">Agenda 5</li>
-                </ul>
+            
+            <div class="col list-group col-md-4">
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">agenda 1</h5>
+                    <small>now</small>
+                  </div>
+                  <p class="mb-1">judul</p>
+                  <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, eligendi.</small>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">agenda 2</h5>
+                    <small class="text-muted">in 3 days</small>
+                  </div>
+                  <p class="mb-1">judul</p>
+                  <small class="text-muted">Lorem ipsum dolor sit amet.</small>
+                </a>
+
+                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="d-flex w-100 justify-content-between">
+                      <h5 class="mb-1">agenda 3</h5>
+                      <small class="text-muted">in 4 days</small>
+                    </div>
+                    <p class="mb-1">judul</p>
+                    <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing.</small>
+                  </a>
+                
             </div>
         </div>
     </div>
