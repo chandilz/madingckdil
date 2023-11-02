@@ -29,6 +29,7 @@
 .footer_fixed {
     position: fixed;
     top: 63%;
+    z-index: 99999;
 }
 
 .kotak {
@@ -39,4 +40,20 @@
 
 iframe {
     border-radius: 15px;
+}
+
+.container-fluid {
+    margin-top: 10px;
+}
+
+.col-md-6 {
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.list-group {
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
 }
