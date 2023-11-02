@@ -1,84 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-    <style>
-        .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-}
-
-    .running-text {
-        overflow: hidden;
-        white-space: nowrap;
-        animation: marquee 20s linear infinite;
-    }
-
-    @keyframes marquee {
-        0%   { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-    }
-        </style>
-
-    <title>Mading</title>
-
-    
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
+
 <body>
-    <!-- Navbar section -->
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Mading 0.1a</a>
-          <a class="btn btn-primary" href="#" role="button">LOGIN</a>
-          </div>
+            <a class="navbar-brand" href="#">Mading 0.1a</a>
+            <a class="btn btn-primary" href="#" role="button">LOGIN</a>
         </div>
-      </nav>
+    </nav>
 
-      <!-- main section -->
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <!-- Video Section -->
-                <div class="mb-4">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
-                </div>
+    <!-- CONTENT -->
+    <div class="container-fluid p-md-3">
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-md-6">
-                <!-- List Agenda Section -->
-                <div class="mb-4">
-                    <h2>Agenda</h2>
-                    <ul class="list-group">
-                        <li class="list-group-item text-center">Agenda 1</li>
-                        <li class="list-group-item text-center">Agenda 2</li>
-                        <li class="list-group-item text-center">Agenda 3</li>
-                        <li class="list-group-item text-center">Agenda 4</li>
-                        <h4> NOTE! BUAT AGENDA dan VIDE SPACE BETWEEN KANAN DAN KIRI</h4>
-                    </ul>
-                </div>
+            <div class="col-md-5 text-center">
+                <h2>AGENDA</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Agenda 1</li>
+                    <li class="list-group-item">Agenda 2</li>
+                    <li class="list-group-item">Agenda 3</li>
+                    <li class="list-group-item">Agenda 4</li>
+                </ul>
             </div>
         </div>
     </div>
-    <!-- container section -->
-    <div class="container">
-        <h1>ISI DARI CONTENT BLANK! buat footer stay di bawah</h1>
-    </div>
 
-    <!-- footer section -->
+    <!-- Running Text -->
     <div class="footer">
-        <div class="container">
-            <div class="running-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo saepe ea voluptas animi ratione ipsa quos explicabo nam nemo unde sit quidem ducimus iusto consectetur, est, molestiae eum eius aliquid!
-            </div>
+        <div class="jam-body" id="jam">
+
         </div>
+        <marquee class="running-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi quasi aut, quae ut quos iusto earum enim placeat in asperiores reprehenderit fuga sed ab eius exercitationem nihil deserunt fugiat sapiente.</marquee>
     </div>
 
-    <!-- Sholat section -->
-    <div class="row text-center justify-content-between">
+    <!-- WAKTU SHOLAT -->
+    <div class="d-flex text-center">
         <div class="col bg-primary">
             <div class="waktu-sholat">
                 <h3>Fajr</h3>
@@ -111,5 +77,21 @@
         </div>
     </div>
 
+    <!-- BEGIN SCRIPT -->
+    <script>
+        // Fungsi untuk menampilkan jam dalam format "hh:mm"
+        function tampilkanJam() {
+            const waktuSekarang = new Date();
+            const jam = waktuSekarang.getHours();
+            const menit = waktuSekarang.getMinutes();
+
+            const jamFormatted = `${jam.toString().padStart(2, '0')}:${menit.toString().padStart(2, '0')}`;
+            document.getElementById('jam').textContent = jamFormatted;
+        }
+
+        // Memanggil fungsi tampilkanJam setiap detik
+        setInterval(tampilkanJam, 1000);
+    </script>
+    <!-- END SCRIPT -->
 </body>
 </html>
