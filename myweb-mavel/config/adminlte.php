@@ -313,19 +313,29 @@ return [
             'url'  => 'admin/blog',
             'can'  => 'manage-blog',
         ],
-        ['header' => 'account_settings'],
         [
-            'text' => 'profile',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'Dashboard ',
+            'url'  => '/home',
+            'icon' => 'fab fa-chart-area',
+        ],
+        ['header' => 'Dashboard settings'],
+        [
+            'text' => 'Setting Video',
+            'url'  => 'settings/video',
+            'icon' => 'fab fa-youtube',
         ],
         [
-            'text' => 'change_password',
-            'url'  => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Setting Mading',
+            'url'  => 'settings/mading',
+            'icon' => 'fas fa-tasks',
         ],
         [
-            'text'    => 'multilevel',
+            'text' => 'Setting Text Run',
+            'url'  => 'settings/textrun',
+            'icon' => 'fas fa-edit',
+        ],
+        [
+            'text'    => 'Level User',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
