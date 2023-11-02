@@ -16,7 +16,7 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Mading 0.1a</a>
+            <a class="navbar-brand" href="/setvid.blade.php">Mading 0.1a</a>
             <a class="btn btn-primary" href="/login" role="button">LOGIN</a>
         </div>
     </nav>
@@ -27,11 +27,14 @@
         <div class="row justify-content-between">
             <div class="col-md-6">
                 <iframe width="100%" height="300" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                <p class="text-center mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem amet voluptate perspiciatis! Suscipit, praesentium fugiat!</p>
             </div>
-            
-            <div class="col list-group col-md-4">
+
+            <div class="col list-group col-md-4 rounded-2">
+                <h3 class="text-center mb-3">Agenda</h3>
                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
                   <div class="d-flex w-100 justify-content-between">
+
                     <h5 class="mb-1">agenda 1</h5>
                     <small>now</small>
                   </div>
@@ -56,7 +59,7 @@
                     <p class="mb-1">judul</p>
                     <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing.</small>
                   </a>
-                
+
             </div>
         </div>
     </div>
