@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-    <title>Madingku</title>
 </head>
 
 <body>
@@ -21,17 +20,16 @@
     <!-- CONTENT -->
     <div class="container-fluid p-md-3">
         <div class="row justify-content-between">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
             </div>
-            <div class="col-md-5 text-center" >
+            <div class="col-md-5 text-center">
                 <h2>AGENDA</h2>
                 <ul class="list-group">
                     <li class="list-group-item">Agenda 1</li>
                     <li class="list-group-item">Agenda 2</li>
                     <li class="list-group-item">Agenda 3</li>
                     <li class="list-group-item">Agenda 4</li>
-                    <li class="list-group-item">Agenda 5</li>
                 </ul>
             </div>
         </div>
@@ -49,13 +47,13 @@
     <div class="d-flex text-center">
         <div class="col bg-primary">
             <div class="waktu-sholat">
-                <h3>Fajar</h3>
+                <h3>Fajr</h3>
                 <p>04:30 AM</p>
             </div>
         </div>
         <div class="col bg-danger">
             <div class="waktu-sholat">
-                <h3>Dzhur</h3>
+                <h3>Dhuhr</h3>
                 <p>12:15 PM</p>
             </div>
         </div>
