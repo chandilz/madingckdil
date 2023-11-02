@@ -18,6 +18,7 @@
     </nav>
 
     <!-- CONTENT -->
+
     <div class="container-fluid p-md-3">
         <div class="row justify-content-between">
             <div class="col-md-5">
@@ -36,6 +37,9 @@
     </div>
 
     <!-- Running Text -->
+<div class="kotak">
+        
+
     <div class="footer">
         <div class="jam-body" id="jam">
 
@@ -76,7 +80,7 @@
             </div>
         </div>
     </div>
-
+</div>
     <!-- BEGIN SCRIPT -->
     <script>
         // Fungsi untuk menampilkan jam dalam format "hh:mm"
