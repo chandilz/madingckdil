@@ -20,3 +20,8 @@
     background-color: darkslategray;
     padding: 10px 0;
 }
+
+.footer_fixed {
+    position: fixed;
+    top: 63%;
+}
