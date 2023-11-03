@@ -1,5 +1,5 @@
 @extends('adminlte::page')
-@section('title', 'Dashboard')
+
 @section('content_header')
-    <h1>SETTING MADING</h1>
+    <h1>Pengaturan Mading</h1>
 @stop
