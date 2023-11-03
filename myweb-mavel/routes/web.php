@@ -20,3 +20,18 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+// video routes
+Route::get('/settings/video', function () {
+    return view('settings.video');
+})->middleware('auth');
+
+// setting_mading routes
+Route::get('/settings/mading', function () {
+    return view('settings.mading');
+})->middleware('auth');
+
+// textrun routes
+Route::get('/settings/textrun', function () {
+    return view('settings.textrun');
+})->middleware('auth');
