@@ -1,6 +1,7 @@
 @extends('adminlte::page')
 
 @section('title', 'Dashboard')
+<link rel="icon" href="./images/logo.jpg">
 
 @section('content_header')
     <h1>Dashboard</h1>

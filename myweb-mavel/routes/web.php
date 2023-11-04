@@ -35,3 +35,8 @@ Route::get('/settings/mading', function () {
 Route::get('/settings/textrun', function () {
     return view('settings.textrun');
 })->middleware('auth');
+
+// profile routes
+Route::get('/settings/profile', function () {
+    return view('settings.profile');
+})->middleware('auth');

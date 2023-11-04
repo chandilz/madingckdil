@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <title>Madingku</title>
+    <link rel="icon" href="./images/logo.jpg">
 </head>
 
 <body>
