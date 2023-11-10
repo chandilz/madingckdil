@@ -22,11 +22,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // video routes
-Route::get('/settings/video', function () {
-    return view('settings.video');
-})->middleware('auth');
+Route::get('/settings/video', [App\Http\Controllers\VideoController::class, 'index'])->name('setting.video')->middleware('auth');
+Route::post('/settings/video/upload', [App\Http\Controllers\VideoController::class, 'upload'])->name('video.upload');
 
-// setting_mading routes
+// madding
 Route::get('/settings/mading', function () {
     return view('settings.mading');
 })->middleware('auth');

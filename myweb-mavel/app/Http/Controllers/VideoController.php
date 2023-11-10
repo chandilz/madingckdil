@@ -10,4 +10,10 @@ class VideoController extends Controller
     {
         return view('settings.video');
     }
+
+    public function upload()
+    {
+        echo 'HAI';
+    }
+
 }
