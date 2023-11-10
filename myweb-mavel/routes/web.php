@@ -40,3 +40,5 @@ Route::get('/settings/textrun', function () {
 Route::get('/settings/profile', function () {
     return view('settings.profile');
 })->middleware('auth');
+
+

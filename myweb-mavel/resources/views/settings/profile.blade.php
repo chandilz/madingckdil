@@ -11,20 +11,27 @@
 
     {{-- Change Foto --}}
 
-    <div class="container_profile">
-        <div>
-            <img id="img"
-                src="https://imgs.search.brave.com/lnooywfhfpdsFYfSoz0RE8iY5XRKfQcoBP9gswnPEIw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzE3Lzg4Lzcz/LzM2MF9GXzIxNzg4/NzM1MF9tRGZMdjJv/b3RRTmVmZldYVDU3/VlFyOE9YN0l2Wkt2/Qi5qcGc"
-                width="150" height="150" class="rounded rounded-5">
-        </div>
-
-        <div class="mt-2">
-            <input id="input" type="file">
-        </div>
-
-
-        <div class="mt-2">
-            <button class="btn btn-primary" type="submit">Change</button>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Profil Pengguna</h3>
+                </div>
+                <div class="card-body ">
+                    <form method="POST" enctype="multipart/form-data">
+                        @csrf
+                        @method('PUT')
+                        <div class="form-group">
+                            <label for="avatar">Foto Profil</label>
+                            <br>
+                            <img id="img" src="{{ asset('images/upload.jpg') }}" width="150" height="150"
+                                class="rounded rounded-5">
+                            <input type="file" name="avatar" id="input" class="form-control-file mt-3">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Simpan Perubahan</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 
