@@ -23,7 +23,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // video routes
 Route::get('/settings/video', [App\Http\Controllers\VideoController::class, 'index'])->name('setting.video')->middleware('auth');
-Route::post('/settings/video/upload', [App\Http\Controllers\VideoController::class, 'upload'])->name('video.upload');
+Route::post('/settings/video/upload', [App\Http\Controllers\VideoController::class, 'upload'])->name('video.upload')->middleware('auth');
 
 // madding
 Route::get('/settings/mading', function () {
